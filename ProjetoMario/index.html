@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Super Mario</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./src/imagens/logo.png" alt="Logo x-men">
+    </header>
+
+    <main class="selecao-de-personagens">
+      <section class="personagens">
+        <h1 class="titulo">Selecione um personagem</h1>
+        <ul class="lista-de-personagens">
+          <li class="personagem selecionado" id="Mario" data-name="Mario" data-description="O bigodudo mais famoso do mundo. Teve sua estréia em 1986 no NES, considerado até hoje um dos melhores e mais influentes jogos já criado. Seu nome completo é Mario Mario.">
+            <img
+              src="./src/imagens/card-mario.jpg"
+              alt="Mario"
+            />
+          </li>
+          <li class="personagem" id="luigi" data-name="Luigi" data-description="O irmão do Mario. Inicialmente, Luigi era apenas um personagem com uma coloração diferente para que houvesse distinção entre os personagens no multiplayer. Mas que no fim, acabou ganhando sua própria personalidade.Seu nome completo é luigi Mario">
+            <img
+              src="./src/imagens/card-luigi.jpg"
+              alt="Luigi"
+            />
+          </li>
+
+          <li class="personagem" id="Yoshi" data-name="Yoshi" data-description="Teve sua primeira aparição no renomado Super Mario World, para SNES. Yoshi é apenas um apelido, seu nome real é Yoshissaur Munchakoopas.">
+            <img
+              src="./src/imagens/card-yoshi.jpg"
+              alt="Yoshi"
+            />
+          </li>
+
+          <li class="personagem" id="Peach" data-name="Princess Peach" data-description="A princesa que sempre é raptada e espera pacientemente ser resgatada por Mario. Mas ela não é tão fraca assim não, ela já apareceu jogável em alguns jogos do Mario, e já protagonizou seu próprio jogo no Nintendo DS: Super Princess Peach.">
+            <img
+              src="./src/imagens/card-peach.jpg"
+              alt="Princess Peach"
+            />
+          </li>
+
+          <li class="personagem" id="Wario" data-name="Wario" data-description="O primo malvado do Mario. Seu nome é a junção de Mario + Warui, que no japonês, significa malvado. Como Warui Mario não ficaria um nome muito legal, eles se juntaram para se formar Wario!">
+            <img
+              src="./src/imagens/card-wario.jpg"
+              alt="Wario"
+            />
+          </li>
+
+          <li class="personagem" id="Waluigi" data-name="Waluigi" data-description="Criado para ser um par do mal junto com Wario, ele é a forma Warui de Luigi. Ele foi criado para aparecer no primeiro jogo de tennis do Mario, Mario Tennis, no Nintendo 64.">
+            <img
+              src="./src/imagens/card-waluigi.jpg"
+              alt="Waluigi"
+            />
+          </li>
+
+          <li class="personagem" id="Daisy" data-name="Daisy" data-description="Essa princesa teve sua primeira aparição em Super Mario Land, para GameBoy, sendo a princesa do Reino de Sarasaland. Hoje, ela é considerada par romântico de Luigi.">
+            <img
+              src="./src/imagens/card-daisy.jpg"
+              alt="Daisy"
+            />
+          </li>
+
+          <li class="personagem" id="DK" data-name="Donkey kong" data-description="Em sua primeira aparição, ele era o vilão que raptava a princesa Pauline, e Mario tinha que salvá-la (sim, havia outra princesa antes de Peach!). Hoje, ele protagoniza uma das séries mais aclamadas do mundo dos games: Donkey Kong Country.">
+            <img
+              src="./src/imagens/card-dk.jpg"
+              alt="Donkey Kong"
+            />
+          </li>
+        </ul>
+      </section>
+      <section class="personagem-selecionado">
+        <img
+          class="personagem-grande"
+          src="./src/imagens/card-mario.png"
+          alt="Personagem Selecionado"
+        />
+
+        <div class="informacoes-personagem">
+          <h2 class="nome-personagem" id="nome-personagem">Mario</h2>
+          <p class="descricao-personagem" id="descricao-personagem">
+            O bigodudo mais famoso do mundo. Teve sua estréia em 1986 no NES, considerado até hoje um dos melhores e mais influentes jogos já criado. Seu nome completo é Mario Mario.
+          </p>
+        </div>
+      </section>
+    </main>
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>
